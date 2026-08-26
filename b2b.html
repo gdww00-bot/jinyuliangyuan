@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>今遇莨缘香云纱 · 深圳非遗手工莨衣源头工厂 ｜ B端专供·高端批发·定向开发·贴牌定制</title>
+  <meta name="description" content="今遇莨缘香云纱，创始人莨哥，家族深耕香云纱供应链十多年。深圳纯手工香云纱源头工厂，配套独立晒莨场、设计部、缝制车间与制版间。专供全国国风实体店、二批、原创品牌采购商，主营高端批发、定向款研发、贴牌定制、小批量改版，谢绝散客零售。商务热线：198-9030-9398。">
+  <meta name="keywords" content="香云纱源头工厂,香云纱批发,深圳香云纱批发,高端手工香云纱,国风服装批发,香云纱贴牌定制,南油名品馆103,今遇莨缘">
+  
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: #110C07;
+    }
+
+    body {
+      background-color: #110C07;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      overflow-x: hidden;
+      padding-bottom: 70px; /* 留出底部悬浮栏高度 */
+    }
+
+    /* ════ 页面全局居中长海报容器 ════ */
+    .poster-app-wrap {
+      max-width: 680px; /* 移动端广告落地页黄金宽度 */
+      margin: 0 auto;
+      background: #FAF6EE;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media (min-width: 1024px) {
+      .poster-app-wrap {
+        max-width: 720px;
+      }
+    }
+
+    /* ════ 顶部固定常驻导航栏 (Sticky Header) ════ */
+    .lp-header-sticky {
+      background: #FFFFFF;
+      padding: 0.75rem 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .lp-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      text-decoration: none;
+    }
+
+    .lp-logo-img {
+      height: 38px;
+      width: auto;
+    }
+
+    .lp-brand-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lp-brand-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #110C07;
+      line-height: 1.2;
+      letter-spacing: 0.04em;
+    }
+
+    .lp-brand-sub {
+      font-size: 0.7rem;
+      color: #C41E3A;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .lp-header-btn {
+      background: rgba(196, 30, 58, 0.08);
+      color: #C41E3A;
+      border: 1px solid rgba(196, 30, 58, 0.3);
+      padding: 0.35rem 0.85rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: all 0.2s;
+    }
+
+    .lp-header-btn:hover {
+      background: #C41E3A;
+      color: #fff;
+    }
+
+    /* ════ 无缝长海报图片流 ════ */
+    .poster-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+      border: none;
+      outline: none;
+    }
+
+    /* ════ 全局固定底部吸附式转化栏 ════ */
+    .lp-floating-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background: #FFFFFF;
+      border-top: 1px solid rgba(212, 175, 55, 0.35);
+      padding: 0.65rem 1rem;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+    }
+
+    .floating-bar-inner {
+      width: 100%;
+      max-width: 680px;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    @media (min-width: 1024px) {
+      .floating-bar-inner {
+        max-width: 720px;
+      }
+    }
+
+    .float-call-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #110C07;
+      text-decoration: none;
+      padding: 0 0.6rem;
+      flex-shrink: 0;
+    }
+
+    .float-call-icon {
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+
+    .float-call-text {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #110C07;
+      margin-top: 0.15rem;
+    }
+
+    .float-action-btn {
+      flex-grow: 1;
+      background: linear-gradient(135deg, #C41E3A, #9E122A);
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 0.85rem 1rem;
+      border-radius: 25px;
+      font-size: 0.98rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      animation: pulseBtn 2.5s infinite;
+    }
+
+    @keyframes pulseBtn {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+  </style>
+  <!-- Vercel Web Analytics & Speed Insights -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+</head>
+<body>
+
+  <!-- 长海报容器 -->
+  <div class="poster-app-wrap">
+    
+    <!-- 顶部固定 Logo 导航条 -->
+    <header class="lp-header-sticky">
+      <a href="/" class="lp-brand">
+        <img src="/logo.png" alt="今遇莨缘香云纱LOGO" class="lp-logo-img" />
+        <div class="lp-brand-info">
+          <span class="lp-brand-title">今遇莨缘 · 香云纱</span>
+          <span class="lp-brand-sub">深圳非遗手工莨衣源头工厂</span>
+        </div>
+      </a>
+      <a href="tel:19890309398" class="lp-header-btn">
+        <span>📞 商务电话</span>
+      </a>
+    </header>
+
+    <!-- 海报 1：源头工厂首屏海报 (高定奢华大片) -->
+    <img src="/assets/posters/poster_01.jpg" alt="今遇莨缘香云纱 · 深圳非遗手工莨衣源头工厂" class="poster-img" />
+
+    <!-- 海报 2：一体两翼体系与六大硬核数据 -->
+    <img src="/assets/posters/poster_02.jpg" alt="“一体两翼”源头工厂体系与六大硬核实力数据" class="poster-img" />
+
+    <!-- 海报 3：四大合作模式 -->
+    <img src="/assets/posters/poster_03.jpg" alt="四大灵活 B 端合作模式" class="poster-img" />
+
+    <!-- 海报 4：南油103展厅与官方微信直连 -->
+    <div id="contact-poster">
+      <img src="/assets/posters/poster_04.jpg" alt="深圳南油103专属批发展厅与官方微信" class="poster-img" />
+    </div>
+  </div>
+
+  <!-- ════ 全局固定底部吸附式转化栏 ════ -->
+  <div class="lp-floating-bar">
+    <div class="floating-bar-inner">
+      <a href="tel:19890309398" class="float-call-btn" title="拨打创始人电话">
+        <span class="float-call-icon">📞</span>
+        <span class="float-call-text">电话直连</span>
+      </a>
+      <a href="#contact-poster" class="float-action-btn" onclick="scrollToContact(event)">
+        <span>💬 预约展厅 ｜ 微信直连创始人莨哥</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function scrollToContact(e) {
+      e.preventDefault();
+      const cSec = document.getElementById('contact-poster');
+      if (cSec) {
+        cSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+</body>
+</html>

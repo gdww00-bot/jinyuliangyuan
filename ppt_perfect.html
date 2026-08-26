@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>今遇莨缘香云纱品牌宣传</title>
+<style>
+/* CSS Reset and base styles */
+body, html { margin: 0; padding: 0; width: 100%; height: 100%; font-family: 'Noto Serif SC', 'Noto Sans SC', serif; background-color: #0A0806; color: #F5EDE0; overflow: hidden; }
+/* Typography and colors */
+h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; }
+.gold { color: #C9A96E; }
+/* Slides container */
+#slider { width: 100%; height: 100%; position: relative; }
+.slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.8s ease; display: flex; flex-direction: column; justify-content: center; align-items: center; box-sizing: border-box; padding: 60px; z-index: 1; }
+.slide.active { opacity: 1; z-index: 2; }
+/* Decorative elements */
+.bg-circle { position: absolute; border-radius: 50%; background: radial-gradient(circle, rgba(201,169,110,0.15) 0%, rgba(10,8,6,0) 70%); }
+.bg-circle-1 { width: 800px; height: 800px; top: -200px; left: -200px; }
+.bg-circle-2 { width: 1000px; height: 1000px; bottom: -300px; right: -300px; }
+.line { width: 1px; height: 100px; background-color: #C9A96E; margin: 30px 0; }
+.h-line { width: 100px; height: 1px; background-color: #C9A96E; margin: 30px 0; }
+
+/* Grid layouts */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; max-width: 1400px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; width: 100%; max-width: 1400px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; width: 100%; max-width: 1400px; }
+
+/* Cards */
+.card { border: 1px solid rgba(201,169,110,0.3); padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(10px); transition: transform 0.3s ease; }
+.card h3 { color: #C9A96E; font-size: 24px; margin-bottom: 20px; border-bottom: 1px solid rgba(201,169,110,0.2); padding-bottom: 10px; }
+.card p { font-size: 16px; line-height: 1.8; color: #ccc; }
+
+/* Titles */
+.slide-title { font-size: 48px; color: #C9A96E; margin-bottom: 20px; text-align: center; letter-spacing: 4px; }
+.slide-subtitle { font-size: 20px; color: #aaa; margin-bottom: 60px; text-align: center; letter-spacing: 2px; }
+
+/* Images */
+.img-container { width: 100%; height: 300px; overflow: hidden; margin-bottom: 20px; border: 1px solid rgba(201,169,110,0.5); }
+.img-container img { width: 100%; height: 100%; object-fit: cover; }
+.img-full { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1; opacity: 0.3; }
+
+/* Specific Slides */
+/* Slide 1: Cover */
+.slide-1 h1 { font-size: 80px; color: #C9A96E; letter-spacing: 10px; margin-bottom: 20px; }
+.slide-1 .en { font-size: 24px; letter-spacing: 8px; color: #aaa; text-transform: uppercase; }
+.slide-1 .tag { border: 1px solid #C9A96E; padding: 10px 30px; font-size: 18px; margin-top: 50px; letter-spacing: 4px; }
+
+/* Slide 5: Craft Process */
+.process-steps { display: flex; justify-content: space-between; width: 100%; max-width: 1200px; margin-top: 50px; }
+.step { text-align: center; flex: 1; position: relative; }
+.step::after { content: '→'; position: absolute; right: -15px; top: 50%; transform: translateY(-50%); color: #C9A96E; font-size: 24px; }
+.step:last-child::after { display: none; }
+.step-num { font-size: 36px; color: rgba(201,169,110,0.3); margin-bottom: 10px; font-family: sans-serif; }
+.step-title { font-size: 24px; color: #C9A96E; }
+
+/* Pagination */
+.dots { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; gap: 15px; z-index: 10; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(201,169,110,0.3); cursor: pointer; transition: 0.3s; }
+.dot.active { background: #C9A96E; transform: scale(1.5); }
+</style>
+</head>
+<body>
+<div class="bg-circle bg-circle-1"></div>
+<div class="bg-circle bg-circle-2"></div>
+
+<div id="slider">
+  <!-- Slide 1: 封面 -->
+  <div class="slide slide-1" id="slide-1">
+    <h1>今遇莨缘</h1>
+    <div class="h-line"></div>
+    <div class="en">The Softest Gold of the Orient</div>
+    <div class="tag">国家级非物质文化遗产</div>
+  </div>
+
+  <!-- Slide 2: 品牌定位 -->
+  <div class="slide" id="slide-2">
+    <h2 class="slide-title">品牌定位</h2>
+    <div class="slide-subtitle">香云纱界的 "Alcantara"</div>
+    <div class="card" style="max-width: 800px; text-align: center; padding: 80px;">
+      <h3 style="font-size: 32px; border:none; margin-bottom: 40px;">品牌宣言</h3>
+      <p style="font-size: 24px; line-height: 2; color: #F5EDE0;">"我们不卖廉价面料，<br>我们定义顶奢感官标准与信任背书。"</p>
+    </div>
+  </div>
+
+  <!-- Slide 3: 认识香云纱 -->
+  <div class="slide" id="slide-3">
+    <h2 class="slide-title">认识香云纱</h2>
+    <div class="slide-subtitle">岭南大地的软黄金</div>
+    <div class="grid-4">
+      <div class="card">
+        <h3>天然植物染</h3>
+        <p>以野生薯莨汁液为染料，富含单宁酸，天然防虫抑菌，与丝绸蛋白完美结合。</p>
+      </div>
+      <div class="card">
+        <h3>珠三角河泥</h3>
+        <p>特有富含游离铁离子的珠三角过塘泥，是发生核心化学反应的独特密码。</p>
+      </div>
+      <div class="card">
+        <h3>天光日晒</h3>
+        <p>顺应天时，必须在特定的日照强度与湿度下进行暴晒，人力不可强求。</p>
+      </div>
+      <div class="card">
+        <h3>双面呈色</h3>
+        <p>一面是深邃的黑胶光泽，一面是薯莨的赤褐底色，阴阳交泰，独具东方哲学。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4: 三大物理壁垒 -->
+  <div class="slide" id="slide-4">
+    <h2 class="slide-title">三大物理壁垒</h2>
+    <div class="slide-subtitle">无法被复制的高奢基因</div>
+    <div class="grid-3">
+      <div class="card">
+        <h3>响云之声</h3>
+        <p style="color:#C9A96E; font-weight:bold; margin-bottom:10px;">物理防伪</p>
+        <p>穿着行走时，面料摩擦发出独特的"沙沙"声，如同风吹树叶，这是任何化学涂层都无法伪造的声音名片。</p>
+      </div>
+      <div class="card">
+        <h3>时间的复利</h3>
+        <p style="color:#C9A96E; font-weight:bold; margin-bottom:10px;">暗金包浆</p>
+        <p>香云纱具有生命力，越穿越柔软，越洗越油润，表面会形成一层温润的暗金包浆，记录穿着者的岁月痕迹。</p>
+      </div>
+      <div class="card">
+        <h3>资产级属性</h3>
+        <p style="color:#C9A96E; font-weight:bold; margin-bottom:10px;">抵抗周期</p>
+        <p>受限于产地、天气、手工与漫长工期，优质香云纱极其稀缺，具备类似名表、老茶的保值与升值潜力。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 5: 36道匠心工艺 -->
+  <div class="slide" id="slide-5">
+    <h2 class="slide-title">匠心工艺</h2>
+    <div class="slide-subtitle">三蒸九煮十八晒</div>
+    <div style="text-align:center; font-size:20px; color:#ccc; max-width:800px; margin-bottom:40px;">
+      历经14种工序，36道工艺，长达数月乃至数年的等待，方得一匹上等香云纱。
+    </div>
+    <div class="process-steps">
+      <div class="step"><div class="step-num">01</div><div class="step-title">选坯</div><p style="color:#aaa;font-size:14px;margin-top:10px;">精选顶级真丝</p></div>
+      <div class="step"><div class="step-num">02</div><div class="step-title">浸莨</div><p style="color:#aaa;font-size:14px;margin-top:10px;">薯莨汁液反复浸染</p></div>
+      <div class="step"><div class="step-num">03</div><div class="step-title">晒莨</div><p style="color:#aaa;font-size:14px;margin-top:10px;">烈日下自然风干</p></div>
+      <div class="step"><div class="step-num">04</div><div class="step-title">过乌</div><p style="color:#aaa;font-size:14px;margin-top:10px;">涂抹河泥发生反应</p></div>
+      <div class="step"><div class="step-num">05</div><div class="step-title">水洗</div><p style="color:#aaa;font-size:14px;margin-top:10px;">洗净河泥，摊雾存放</p></div>
+    </div>
+  </div>
+
+  <!-- Slide 6: 产品线展示 -->
+  <div class="slide" id="slide-6">
+    <h2 class="slide-title">产品系列</h2>
+    <div class="slide-subtitle">东方非遗与当代高奢的碰撞</div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="img-container">
+          <div style="width:100%;height:100%;background:#1a1510;display:flex;align-items:center;justify-content:center;color:#333;">[深邃黑胶]</div>
+        </div>
+        <h3>深邃黑胶系列</h3>
+        <p>极致的黑色光泽，带有金属质感，适合气场强大的正装与晚宴战袍。</p>
+      </div>
+      <div class="card">
+        <div class="img-container">
+          <div style="width:100%;height:100%;background:#1a1510;display:flex;align-items:center;justify-content:center;color:#333;">[通透暗花]</div>
+        </div>
+        <h3>通透暗花系列</h3>
+        <p>提花工艺与香云纱的结合，隐约可见的底纹，低调中尽显奢华底蕴。</p>
+      </div>
+      <div class="card">
+        <div class="img-container">
+          <div style="width:100%;height:100%;background:#1a1510;display:flex;align-items:center;justify-content:center;color:#333;">[立体剪裁]</div>
+        </div>
+        <h3>现代立体剪裁</h3>
+        <p>打破传统中式束缚，引入国际时装版型，让香云纱走入现代精英衣橱。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 7: 面料六大特性 -->
+  <div class="slide" id="slide-7">
+    <h2 class="slide-title">面料特性</h2>
+    <div class="slide-subtitle">不仅仅是美，更是极致的穿着体验</div>
+    <div class="grid-3">
+      <div class="card"><h3>凉爽透气</h3><p>真丝基底加上特殊涂层，散热极快，是盛夏的理想着装。</p></div>
+      <div class="card"><h3>防水易护理</h3><p>表面黑胶涂层具有一定的防水性，不易沾染污渍，易于打理。</p></div>
+      <div class="card"><h3>越穿越柔</h3><p>打破初始的硬挺，随体温与时间变得柔软贴合，如第二层肌肤。</p></div>
+      <div class="card"><h3>纯天然环保</h3><p>全程无化学添加，零污染，亲肤不致敏，真正的可持续时尚。</p></div>
+      <div class="card"><h3>独一无二</h3><p>手工制作的不可控性，使得每一寸面料的纹理与色泽都独一无二。</p></div>
+      <div class="card"><h3>低调奢华</h3><p>不张扬的光泽，无需logo即可被同类识读的"老钱风"质感。</p></div>
+    </div>
+  </div>
+
+  <!-- Slide 8: 商业模式 -->
+  <div class="slide" id="slide-8">
+    <h2 class="slide-title">商业模式与战略</h2>
+    <div class="slide-subtitle">拒绝内卷，坚守B端高奢定价</div>
+    <div class="grid-3">
+      <div class="card" style="text-align:center;">
+        <div style="font-size:40px; color:#C9A96E; margin-bottom:20px;">🛡️</div>
+        <h3>一城一店</h3>
+        <p>严格的区域配额制保护，确保合作伙伴的独家经营权，杜绝恶性竞争。</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:40px; color:#C9A96E; margin-bottom:20px;">⚡</div>
+        <h3>B端赋能三件套</h3>
+        <p>顶级面料直供 + 国际化版型库授权 + 专属物理防伪吊牌体系，全方位支持。</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:40px; color:#C9A96E; margin-bottom:20px;">🌐</div>
+        <h3>全渠道布局</h3>
+        <p>线下非遗美学体验馆，提供沉浸式体验；线上高端内容传播，建立品牌心智。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 9: 应用场景 -->
+  <div class="slide" id="slide-9">
+    <h2 class="slide-title">应用场景</h2>
+    <div class="slide-subtitle">属于智识阶层的战袍</div>
+    <div class="grid-2">
+      <div class="card" style="display:flex; align-items:center;">
+        <div style="flex:1;">
+          <h3>路演与商务谈判</h3>
+          <p>气场全开，低调内敛又极具威慑力，彰显品味与实力，是不露声色的实力背书。</p>
+        </div>
+      </div>
+      <div class="card" style="display:flex; align-items:center;">
+        <div style="flex:1;">
+          <h3>艺术峰会与晚宴</h3>
+          <p>自带文化底蕴与艺术气息，在西装革履中脱颖而出，展现独特的东方审美自信。</p>
+        </div>
+      </div>
+      <div class="card" style="display:flex; align-items:center;">
+        <div style="flex:1;">
+          <h3>高端私密聚会</h3>
+          <p>舒适自在，随性中透露出不凡格调，是"老钱"们在私下场合的首选着装。</p>
+        </div>
+      </div>
+      <div class="card" style="display:flex; align-items:center;">
+        <div style="flex:1;">
+          <h3>文化交流活动</h3>
+          <p>作为行走的非遗，它是最好的文化使者，无需言语即可传递深厚的东方哲学。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 10: 为何选择 -->
+  <div class="slide" id="slide-10">
+    <h2 class="slide-title">为何选择今遇莨缘</h2>
+    <div class="slide-subtitle">坚守底线，定义标准</div>
+    <div class="grid-4">
+      <div class="card" style="border-top: 5px solid #C9A96E;">
+        <h3>正宗工艺</h3>
+        <p>严守传统古法，绝不使用现代化学助剂催化，确保最纯正的香云纱质感。</p>
+      </div>
+      <div class="card" style="border-top: 5px solid #C9A96E;">
+        <h3>纯天然</h3>
+        <p>垄断核心产区优质河泥与野生薯莨资源，从源头掌控面料的顶级品质。</p>
+      </div>
+      <div class="card" style="border-top: 5px solid #C9A96E;">
+        <h3>高端定制</h3>
+        <p>强大的设计团队与版型库，满足各类高奢客户的个性化定制需求。</p>
+      </div>
+      <div class="card" style="border-top: 5px solid #C9A96E;">
+        <h3>品质保证</h3>
+        <p>完善的溯源与防伪体系，每一寸面料都有迹可循，为消费者提供坚实的信任基础。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 11: 展馆与产品 -->
+  <div class="slide" id="slide-11">
+    <h2 class="slide-title">展馆与产品体验</h2>
+    <div class="slide-subtitle">南山名品馆线下非遗体验馆</div>
+    <div style="display:flex; gap:20px; width:100%; max-width:1400px; height: 500px;">
+      <div style="flex:2; border: 1px solid rgba(201,169,110,0.5); background:#1a1510; display:flex; align-items:center; justify-content:center; color:#555; position:relative; overflow:hidden;">
+        <div style="position:absolute;z-index:2;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:20px;">线下非遗美学体验馆</div>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:20px;">
+        <div style="flex:1; border: 1px solid rgba(201,169,110,0.5); background:#1a1510; display:flex; align-items:center; justify-content:center; color:#555; position:relative; overflow:hidden;">
+          <div style="position:absolute;z-index:2;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:20px;">现代立体剪裁</div>
+        </div>
+        <div style="flex:1; border: 1px solid rgba(201,169,110,0.5); background:#1a1510; display:flex; align-items:center; justify-content:center; color:#555; position:relative; overflow:hidden;">
+          <div style="position:absolute;z-index:2;background:rgba(0,0,0,0.5);padding:10px 20px;border-radius:20px;">深邃黑胶质感</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 12: 结语+联系方式 -->
+  <div class="slide" id="slide-12">
+    <h1 style="font-size: 60px; color: #C9A96E; margin-bottom: 20px; letter-spacing: 5px;">有缘今日遇，莨缘一世情</h1>
+    <div class="line" style="height: 60px;"></div>
+    <div style="text-align: center; font-size: 20px; color: #F5EDE0; line-height: 2;">
+      <p><strong>联系人：</strong> 莨哥</p>
+      <p><strong>尊享热线：</strong> <span class="gold">198-9030-9398</span></p>
+      <p><strong>体验馆地址：</strong> 南山区南油第一工业区103名品馆</p>
+      <p><strong>微信公众号 / 小红书：</strong> 今遇莨缘香云纱</p>
+    </div>
+    <div style="margin-top: 50px; width: 150px; height: 150px; border: 1px solid #C9A96E; display: flex; align-items: center; justify-content: center; color: #C9A96E;">
+      [微信公众号二维码]
+    </div>
+  </div>
+
+</div>
+
+<div class="dots" id="dots"></div>
+
+<script>
+  let currentSlide = 1;
+  const totalSlides = 12;
+  const slides = document.querySelectorAll('.slide');
+  const dotsContainer = document.getElementById('dots');
+  let isAnimating = false;
+
+  // Initialize dots
+  for(let i=1; i<=totalSlides; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'dot' + (i===1 ? ' active' : '');
+    dot.onclick = () => goToSlide(i);
+    dotsContainer.appendChild(dot);
+  }
+  const dots = document.querySelectorAll('.dot');
+
+  // Go to slide globally accessible for Puppeteer
+  window.goToSlide = function(n) {
+    if(n < 1 || n > totalSlides || isAnimating) return;
+    isAnimating = true;
+    
+    slides[currentSlide-1].classList.remove('active');
+    dots[currentSlide-1].classList.remove('active');
+    
+    currentSlide = n;
+    
+    slides[currentSlide-1].classList.add('active');
+    dots[currentSlide-1].classList.add('active');
+    
+    setTimeout(() => { isAnimating = false; }, 800);
+  };
+
+  window.addEventListener('keydown', (e) => {
+    if(e.key === 'ArrowRight' || e.key === 'ArrowDown') goToSlide(currentSlide + 1);
+    else if(e.key === 'ArrowLeft' || e.key === 'ArrowUp') goToSlide(currentSlide - 1);
+  });
+
+  // Basic touch
+  let touchStartX = 0;
+  window.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; });
+  window.addEventListener('touchend', e => {
+    let touchEndX = e.changedTouches[0].screenX;
+    if(touchEndX < touchStartX - 50) goToSlide(currentSlide + 1);
+    if(touchEndX > touchStartX + 50) goToSlide(currentSlide - 1);
+  });
+  
+  // Wheel
+  window.addEventListener('wheel', (e) => {
+    if (e.deltaY > 0) goToSlide(currentSlide + 1);
+    else if (e.deltaY < 0) goToSlide(currentSlide - 1);
+  });
+
+  // Init
+  slides[0].classList.add('active');
+</script>
+</body>
+</html>

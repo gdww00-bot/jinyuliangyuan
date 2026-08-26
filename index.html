@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>今遇莨缘 · 香云纱 — 千年丝织非遗之美</title>
+  <meta name="description" content="今遇莨缘香云纱，传承广东非遗千年工艺，精选高档香云纱面料与成衣，将东方美学融入现代生活。探索我们的香云纱系列，感受丝织文化的极致优雅。" />
+  <meta name="keywords" content="香云纱,今遇莨缘,高档丝绸,非遗工艺,莨绸,广东传统面料,旗袍面料" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="shortcut icon" href="logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Vercel Web Analytics & Speed Insights -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <img src="logo.png" alt="今遇莨缘香云纱 Logo" class="logo-img" id="brand-logo" />
+        <span class="logo-text">
+          <span class="logo-main">今遇莨缘</span>
+          <span class="logo-sub">香云纱</span>
+        </span>
+      </a>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#products" class="nav-link" id="nav-products">典藏系列</a>
+        <a href="#about" class="nav-link" id="nav-about">品牌故事</a>
+        <a href="#showroom" class="nav-link" id="nav-showroom">展示场馆</a>
+        <a href="#contact" class="nav-link nav-cta" id="nav-contact">联系我们</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="切换导航">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 四大典藏系列 - 最顶端 4 列纵向并列展示 -->
+  <section class="products" id="products" style="padding-top: 100px;">
+    <div class="products-header">
+      <div class="section-label">THE MASTERPIECE COLLECTION</div>
+      <h2 class="section-title">四大典藏系列<br/><em>非遗香云纱 · 东方美学演绎</em></h2>
+      <p class="products-subdesc">甄选顺德古法香云纱，将传统非遗刺绣与现代剪裁风骨完美融合</p>
+    </div>
+    <div class="products-grid-vertical" id="products-grid">
+      <!-- 01 喜上眉梢 -->
+      <div class="product-card-v" id="product-1" onclick="openSeriesModal('xishangmeishao')">
+        <div class="product-img-wrap-v">
+          <img src="assets/series/xishangmeishao_1.jpg" alt="喜上眉梢 · 香云纱斜襟套装" class="product-img-v" />
+          <div class="product-overlay-v">
+            <span class="product-tag-v">非遗刺绣</span>
+          </div>
+          <div class="product-hover-action-v">
+            <span>赏析全集 &rarr;</span>
+          </div>
+        </div>
+        <div class="product-info-v">
+          <div class="product-num-v">01</div>
+          <h3>喜上眉梢 ｜ 香云纱斜襟套装</h3>
+          <p>黑底哑光沉静油润质感，喜上眉梢重工刺绣，经典斜襟盘扣，寓意喜乐安康。</p>
+          <div class="product-footer-v">
+            <span class="product-badge-v">典藏套装</span>
+            <span class="product-view-btn-v">赏析全集 &rarr;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 墨染花境 -->
+      <div class="product-card-v" id="product-2" onclick="openSeriesModal('moranhuajing')">
+        <div class="product-img-wrap-v">
+          <img src="assets/series/moranhuajing_1.jpg" alt="墨染花境 · 香云纱改良旗袍" class="product-img-v" />
+          <div class="product-overlay-v">
+            <span class="product-tag-v">顺德非遗</span>
+          </div>
+          <div class="product-hover-action-v">
+            <span>赏析全集 &rarr;</span>
+          </div>
+        </div>
+        <div class="product-info-v">
+          <div class="product-num-v">02</div>
+          <h3>墨染花境 ｜ 香云纱改良旗袍</h3>
+          <p>薯莨浸染，河泥覆晒。暗纹底布暗藏风华，蓝红撞色刺绣，勾勒东方气韵。</p>
+          <div class="product-footer-v">
+            <span class="product-badge-v">改良旗袍</span>
+            <span class="product-view-btn-v">赏析全集 &rarr;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 灼华牡丹 -->
+      <div class="product-card-v" id="product-3" onclick="openSeriesModal('zhuohuamudan')">
+        <div class="product-img-wrap-v">
+          <img src="assets/series/zhuohuamudan_1.jpg" alt="灼华牡丹 · 香云纱重工马甲" class="product-img-v" />
+          <div class="product-overlay-v">
+            <span class="product-tag-v">重工刺绣</span>
+          </div>
+          <div class="product-hover-action-v">
+            <span>赏析全集 &rarr;</span>
+          </div>
+        </div>
+        <div class="product-info-v">
+          <div class="product-num-v">03</div>
+          <h3>灼华牡丹 ｜ 香云纱重工马甲</h3>
+          <p>复古红棕调温润光泽，满身重工牡丹刺绣，花开灼灼，解锁国风混搭美学。</p>
+          <div class="product-footer-v">
+            <span class="product-badge-v">重工马甲</span>
+            <span class="product-view-btn-v">赏析全集 &rarr;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 金庭绯棠 -->
+      <div class="product-card-v" id="product-4" onclick="openSeriesModal('jintingfeitang')">
+        <div class="product-img-wrap-v">
+          <img src="assets/series/jintingfeitang_1.jpg" alt="金庭绯棠 · 香云纱西装马甲套装" class="product-img-v" />
+          <div class="product-overlay-v">
+            <span class="product-tag-v">新中式西装</span>
+          </div>
+          <div class="product-hover-action-v">
+            <span>赏析全集 &rarr;</span>
+          </div>
+        </div>
+        <div class="product-info-v">
+          <div class="product-num-v">04</div>
+          <h3>金庭绯棠 ｜ 香云纱西装马甲套装</h3>
+          <p>鎏金华彩配西装翻领与同面料阔腿裤，打破传统形制，松弛又贵气。</p>
+          <div class="product-footer-v">
+            <span class="product-badge-v">西装套装</span>
+            <span class="product-view-btn-v">赏析全集 &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="products-cta" id="products-cta">
+      <a href="#contact" class="btn btn-primary" id="btn-inquire">预约展厅试穿 &amp; 专属定制</a>
+    </div>
+  </section>
+
+  <!-- Brand Story & Heritage Section (品牌故事 · 非遗与匠心) -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-image-wrap" id="about-image-wrap">
+        <div class="about-img-frame">
+          <img src="assets/about_fabric.jpg" alt="今遇莨缘香云纱面料" class="about-img" id="about-main-image" />
+        </div>
+        <div class="about-accent-card" id="about-accent">
+          <span class="accent-char">莨</span>
+          <span class="accent-text">·莨香世代·</span>
+        </div>
+      </div>
+      <div class="about-content" id="about-content">
+        <div class="section-label">BRAND STORY &amp; HERITAGE</div>
+        <h2 class="section-title">今遇莨缘<br/><em>守护千年非遗，传承东方智慧</em></h2>
+        <div class="heritage-stat-grid" style="margin-top: 2.2rem;">
+          <div class="h-stat" id="h-stat-1">
+            <span class="h-stat-num">2008</span>
+            <span class="h-stat-label">年入选国家非遗</span>
+          </div>
+          <div class="h-stat" id="h-stat-2">
+            <span class="h-stat-num">10+</span>
+            <span class="h-stat-label">年深耕供应链</span>
+          </div>
+          <div class="h-stat" id="h-stat-3">
+            <span class="h-stat-num">36+</span>
+            <span class="h-stat-label">道古法淬炼工序</span>
+          </div>
+          <div class="h-stat" id="h-stat-4">
+            <span class="h-stat-num">100%</span>
+            <span class="h-stat-label">纯天然植物染制</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 源头工厂实力与品牌简介模块 -->
+    <div class="factory-strength-container">
+      <div class="factory-profile-card">
+        <div class="profile-header-row">
+          <div class="profile-badge">深圳非遗手工莨衣源头工厂</div>
+          <div class="profile-founder">创始人 · 莨哥（深耕香云纱供应链10+年）</div>
+        </div>
+        <h3 class="profile-title">今遇莨缘香云纱 ｜ 高品质·高标准·高要求纯手工设计工厂</h3>
+        <p class="profile-desc">我们拥有自有完整生产厂区，配套独立晒莨场地、设计部、手工缝制车间、绣花制版间四大硬性生产配置。坚持溯源五千年历史的原创国风纹样，一件重工莨衣制作周期 10‑15 天。依托非遗天然薯莨面料，以古法手工核心工艺结合现代化辅助设备，打造五行时令配色刺绣、国人专属改良版型，支持灵活小单定制，全流程匠人精工品控。</p>
+        
+        <div class="profile-b2b-notice">
+          <span class="notice-tag">B端采购须知</span>
+          <p class="notice-text">品牌专注 B 端专供高端手工香云纱，主营高端手工香云纱批发、国风门店定向款开发、品牌贴牌定制、小批量个性化改版。南山区南油第一工业区 103 名品馆设有专属批发展厅，<strong>面向全国国风实体店、二批、原创品牌采购商合作，谢绝散客零售。</strong></p>
+        </div>
+      </div>
+
+      <!-- 工厂四大硬核生产配置 -->
+      <div class="factory-config-grid">
+        <div class="config-card">
+          <div class="config-num">01</div>
+          <h4>独立晒莨场地</h4>
+          <p>专属天然晒莨场，承袭千年古法薯莨浸染与河泥日晒工序。</p>
+        </div>
+        <div class="config-card">
+          <div class="config-num">02</div>
+          <h4>专属设计部门</h4>
+          <p>溯源5000年国风纹样，打造五行时令配色刺绣与专属改良版型。</p>
+        </div>
+        <div class="config-card">
+          <div class="config-num">03</div>
+          <h4>手工缝制车间</h4>
+          <p>全流程匠人精工品控，重工莨衣制作周期10-15天，支持小单定制。</p>
+        </div>
+        <div class="config-card">
+          <div class="config-num">04</div>
+          <h4>绣花制版空间</h4>
+          <p>依托非遗天然面料，古法结合现代化辅助设备高标准制版。</p>
+        </div>
+      </div>
+
+      <!-- B端四项主营业务 -->
+      <div class="factory-services-strip">
+        <div class="f-service-item">
+          <span class="f-icon">❖</span>
+          <div><strong>高端手工香云纱批发</strong><p>全系列现货批发供应</p></div>
+        </div>
+        <div class="f-service-item">
+          <span class="f-icon">❖</span>
+          <div><strong>国风门店定向款开发</strong><p>专属渠道独家款式研发</p></div>
+        </div>
+        <div class="f-service-item">
+          <span class="f-icon">❖</span>
+          <div><strong>品牌贴牌 OEM / ODM</strong><p>高标准大厂贴牌定制</p></div>
+        </div>
+        <div class="f-service-item">
+          <span class="f-icon">❖</span>
+          <div><strong>小批量个性化改版</strong><p>灵活小单快速反应</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 匠心工序 (合并至品牌故事板块中) -->
+    <div class="craft-block-integrated" id="craft" style="padding-top: 4rem;">
+      <div class="craft-header" style="text-align: center; margin-bottom: 3rem;">
+        <div class="section-label">THE CRAFT</div>
+        <h2 class="section-title">三十六道古法淬炼工序<br/><em>日月同辉 · 薯莨河泥成就一寸芳华</em></h2>
+      </div>
+      <div class="craft-steps" id="craft-steps">
+        <div class="step-card" id="step-1">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>选桑养蚕</h3>
+            <p>精选岭南优质桑叶，养育优质蚕茧，采用纯天然桑蚕丝为原料，织成细密白坯绸。</p>
+          </div>
+          <div class="step-icon">🌿</div>
+        </div>
+        <div class="step-card" id="step-2">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>薯莨采汁</h3>
+            <p>采集珠三角特产野生薯莨，研磨榨汁提取天然单宁染料，是香云纱独特色泽的根源。</p>
+          </div>
+          <div class="step-icon">🍂</div>
+        </div>
+        <div class="step-card" id="step-3">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>反复涂晒</h3>
+            <p>将薯莨汁液反复涂刷于白坯绸上，每涂一遍则于阳光下平铺晾晒，此工序反复逾三十次。</p>
+          </div>
+          <div class="step-icon">☀️</div>
+        </div>
+        <div class="step-card" id="step-4">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>河泥封面</h3>
+            <p>以珠三角特有含铁量丰富的黑色河泥覆盖织物，令薯莨单宁与铁离子发生氧化反应，形成独特乌黑色泽。</p>
+          </div>
+          <div class="step-icon">🌊</div>
+        </div>
+        <div class="step-card" id="step-5">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <h3>水洗定色</h3>
+            <p>清水反复漂洗，去除多余泥土，令面料呈现出标志性的"正面乌黑、反面棕红"双色效果。</p>
+          </div>
+          <div class="step-icon">💧</div>
+        </div>
+        <div class="step-card" id="step-6">
+          <div class="step-num">06</div>
+          <div class="step-content">
+            <h3>成就香云纱</h3>
+            <p>历经三个月以上、三十六道以上工序，一匹香云纱方告完成，天然柔滑、透气抗菌，愈穿愈美。</p>
+          </div>
+          <div class="step-icon">✨</div>
+        </div>
+      </div>
+      <div class="craft-image-strip" id="craft-image-strip">
+        <img src="assets/craft_process.jpg" alt="香云纱制作工艺" class="craft-full-img" id="craft-process-image" />
+        <div class="craft-img-overlay">
+          <p class="craft-quote">"一匹香云纱，三个月日晒水洗，三十六道工序，<br/>方成人间至美。"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showroom Section -->
+  <section class="showroom" id="showroom">
+    <div class="showroom-header">
+      <div class="section-label" style="color:#D4AF37;">SHOWROOM</div>
+      <h2 class="section-title light">品牌展馆<br/><em>走进今遇莨缘，感受东方丝织之美</em></h2>
+      <p class="showroom-desc">我们的展示场馆融合传统美学与现代空间设计，以沉浸式陈设呈现香云纱的千年工艺之美，欢迎莅临体验。</p>
+    </div>
+    <div class="showroom-gallery" id="showroom-gallery">
+      <div class="showroom-item showroom-large" id="showroom-item-1">
+        <img src="assets/showroom_1.jpg" alt="今遇莨缘展示场馆-全景" class="showroom-img" />
+        <div class="showroom-caption">
+          <span class="caption-tag">展示陈列</span>
+          <p>经典莨绸服装展示，一衣一韵皆有故事</p>
+        </div>
+      </div>
+      <div class="showroom-col">
+        <div class="showroom-item" id="showroom-item-2">
+          <img src="assets/showroom_2.jpg" alt="今遇莨缘展示场馆-服装陈列" class="showroom-img" />
+          <div class="showroom-caption">
+            <span class="caption-tag">传统服饰</span>
+            <p>以香云纱为料，传承岭南服饰文化</p>
+          </div>
+        </div>
+        <div class="showroom-item" id="showroom-item-3">
+          <img src="assets/showroom_3.jpg" alt="今遇莨缘展示场馆-新品展示" class="showroom-img" />
+          <div class="showroom-caption">
+            <span class="caption-tag">精品系列</span>
+            <p>新中式美学与现代设计的完美融合</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="showroom-cta">
+      <a href="#contact" class="btn btn-outline-gold" id="btn-visit">预约参观 →</a>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+
+  <section class="why-us" id="why-us">
+    <div class="why-header">
+      <div class="section-label">WHY CHOOSE US</div>
+      <h2 class="section-title">为什么选择今遇莨缘源头工厂</h2>
+    </div>
+    <div class="why-grid" id="why-grid">
+      <div class="why-card" id="why-1">
+        <div class="why-icon">🏭</div>
+        <h3>源头工厂直供</h3>
+        <p>深耕香云纱供应链10+年，自有晒莨场地、缝制车间与制版间，一手源头工厂无中间商。</p>
+      </div>
+      <div class="why-card" id="why-2">
+        <div class="why-icon">🌿</div>
+        <h3>正宗非遗天然染</h3>
+        <p>全程采用纯天然薯莨汁液与珠三角河泥日晒古法，5000年国风纹样结合五行时令配色刺绣。</p>
+      </div>
+      <div class="why-card" id="why-3">
+        <div class="why-icon">✂️</div>
+        <h3>B端小单灵活定制</h3>
+        <p>主营现货批发、国风门店定向款开发、品牌贴牌OEM/ODM和小批量改版，10-15天精工制作。</p>
+      </div>
+      <div class="why-card" id="why-4">
+        <div class="why-icon">💎</div>
+        <h3>全流程匠人品控</h3>
+        <p>高标准硬性配置，全流程匠人精工质检，为全国国风实体店与采购商提供坚实品质后盾。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-container contact-single">
+      <div class="contact-info" id="contact-info">
+        <div class="section-label" style="color:#D4AF37;">CONTACT US</div>
+        <h2 class="section-title light">合作洽谈<br/><em>深圳非遗手工莨衣源头工厂</em></h2>
+        <p class="contact-desc" style="color:#e0d0b0; font-size: 1.05rem; line-height: 1.8;">专供高端手工香云纱，只服务全国国风实体店、二批、原创品牌采购商合作，<strong>谢绝散客零售。</strong>欢迎采购商莅临南油名品馆批发展厅品鉴洽谈。</p>
+        <div class="contact-items">
+          <div class="contact-item contact-item-qr" id="contact-wechat">
+            <span class="contact-icon">💬</span>
+            <div>
+              <strong>微信公众号</strong>
+              <p>扫描二维码关注官方微信</p>
+              <img src="assets/wechat_qr.png" alt="今遇莨缘微信公众号二维码" class="wechat-qr-img" id="wechat-qr" />
+            </div>
+          </div>
+          <div class="contact-item" id="contact-phone">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>商务合作</strong>
+              <p style="font-size: 1.25rem; font-weight: 700; color: #d4af37;">198-9030-9398 · 莨哥</p>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-location">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>展厅地址</strong>
+              <p>深圳市南山区南油第一工业区 103 名品馆</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand" id="footer-brand">
+        <img src="logo.png" alt="今遇莨缘" class="footer-logo" />
+        <p class="footer-tagline">今遇莨缘 · 香云纱<br/>千年丝织，东方美学</p>
+      </div>
+      <div class="footer-links" id="footer-links">
+        <div class="footer-col">
+          <h4>品牌文化</h4>
+          <a href="#about">品牌故事</a>
+          <a href="#craft">三十六道工序</a>
+        </div>
+        <div class="footer-col">
+          <h4>四大典藏系列</h4>
+          <a href="#products">喜上眉梢斜襟</a>
+          <a href="#products">墨染花境旗袍</a>
+          <a href="#products">灼华牡丹马甲</a>
+          <a href="#products">金庭绯棠西装</a>
+        </div>
+        <div class="footer-col">
+          <h4>联系方式</h4>
+          <a href="#contact">在线咨询</a>
+          <a href="#contact">预约试穿</a>
+          <a href="#contact">展厅地址</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 今遇莨缘香云纱 · 保留所有权利 · 广东非物质文化遗产传承品牌</p>
+    </div>
+  <!-- Series Detail Modal (四大典藏系列图集弹窗) -->
+  <div class="series-modal-overlay" id="seriesModalOverlay" onclick="closeSeriesModal(event)">
+    <div class="series-modal-container" onclick="event.stopPropagation()">
+      <button class="series-modal-close" onclick="closeSeriesModal()" title="关闭">&times;</button>
+      <div class="series-modal-body">
+        <div class="series-modal-gallery">
+          <div class="series-modal-main-img-wrap">
+            <img id="modalMainImg" src="" alt="系列展示大图" />
+          </div>
+          <div class="series-modal-thumbs" id="modalThumbs"></div>
+        </div>
+        <div class="series-modal-info">
+          <span class="series-modal-tag" id="modalTag">非遗刺绣</span>
+          <h2 class="series-modal-title" id="modalTitle">系列名称</h2>
+          <div class="series-modal-divider"></div>
+          <div class="series-modal-text" id="modalText"></div>
+          <div class="series-modal-actions">
+            <a href="#contact" onclick="closeSeriesModal()" class="btn btn-primary">预约展厅试穿 &amp; 专属定制</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
